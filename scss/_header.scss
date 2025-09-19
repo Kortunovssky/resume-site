@@ -1,0 +1,26 @@
+.header {
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+color: #fff;
+padding: clamp(2rem, 5vw, 4rem) 0;
+&__inner {
+@include grid-auto(280px);
+align-items: center;
+}
+&__title { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; }
+&__subtitle { font-size: clamp(1.1rem, 2.5vw, 1.5rem); opacity: .9; margin-top: .25rem; }
+&__contacts {
+display: flex;
+flex-direction: column;
+gap: .5rem;
+font-style: normal;
+.contact-link {
+color: #fff;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: .5rem;
+transition: opacity .3s;
+&:hover { opacity: .8; }
+}
+}
+}
