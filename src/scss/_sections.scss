@@ -1,0 +1,89 @@
+.section {
+background: var(--clr-bg);
+margin: 2rem 0;
+padding: clamp(1.5rem, 4vw, 3rem);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+&__title {
+font-size: clamp(1.5rem, 4vw, 2rem);
+font-weight: 600;
+color: var(--clr-primary);
+margin-bottom: 1.5rem;
+position: relative;
+&::after {
+content: '';
+position: absolute;
+bottom: -6px; left: 0;
+width: 40px; height: 3px;
+background: var(--clr-accent);
+border-radius: 2px;
+}
+}
+&__text { color: var(--clr-text-light); }
+}
+.skills-grid { @include grid-auto(280px); }
+.skill-card {
+background: var(--clr-bg-soft);
+padding: 1.5rem;
+border-radius: var(--radius);
+border: 1px solid #e5e7eb;
+transition: transform .3s, box-shadow .3s;
+&:hover {
+transform: translateY(-4px);
+box-shadow: 0 10px 20px rgba(0,0,0,.1);
+}
+&__title { font-size: 1.1rem; font-weight: 600; color: var(--clr-primary); margin-bottom: 1rem; }
+}
+.skill-list {
+list-style: none;
+li {
+padding: .25rem 0 .25rem 1.25rem;
+position: relative;
+&::before {
+content: '▸';
+position: absolute;
+left: 0;
+color: var(--clr-accent);
+font-weight: 700;
+}
+}
+}
+.projects-grid { @include grid-auto(320px); }
+.project-card {
+background: var(--clr-bg-soft);
+border-radius: var(--radius);
+overflow: hidden;
+border: 1px solid #e5e7eb;
+transition: transform .3s;
+&:hover { transform: translateY(-4px); }
+&__title { padding: 1rem 1.5rem; background: var(--clr-primary); color: #fff; font-size: 1.1rem; }
+&__tech { padding: 1rem 1.5rem .5rem; display: flex; flex-wrap: wrap; gap: .5rem; }
+p { padding: 0 1.5rem 1.5rem; margin: 0; font-size: .95rem; color: var(--clr-text-light); }
+}
+.tag {
+background: #fff;
+border: 1px solid #e5e7eb;
+padding: .25rem .75rem;
+border-radius: 999px;
+font-size: .8rem;
+color: var(--clr-primary);
+}
+.advantages-grid { @include grid-auto(250px); }
+.advantage-item {
+display: flex;
+align-items: center;
+gap: 1rem;
+background: var(--clr-bg-soft);
+padding: 1.25rem;
+border-radius: var(--radius);
+transition: background .3s, color .3s;
+&:hover { background: var(--clr-primary); color: #fff; }
+&__icon { font-size: 2rem; line-height: 1; }
+}
+.footer {
+text-align: center;
+padding: 2rem 0;
+font-size: .9rem;
+color: var(--clr-text-light);
+address { font-style: normal; margin-top: .5rem; }
+}
