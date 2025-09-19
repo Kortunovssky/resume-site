@@ -1,0 +1,21 @@
+@mixin flex-center {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+@mixin grid-auto(
+min: 300px) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(
+min, 1fr));
+gap: 2rem;
+}
+@mixin mq(
+name) {
+  @if map-has-key(
+breakpoints, 
+name) {
+    @media (max-width: map-get(
+breakpoints, $name)) { @content; }
+}
+}
