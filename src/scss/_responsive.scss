@@ -1,0 +1,7 @@
+@include mq('tablet') {
+.header__inner { grid-template-columns: 1fr; text-align: center; }
+}
+@include mq('mobile') {
+.timeline { padding-left: 1.25rem; }
+.skill-card, .project-card, .advantage-item { padding: 1rem; }
+}
