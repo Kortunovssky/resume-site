@@ -1,0 +1,18 @@
+@import 'variables', 'mixins';
+@import 'header', 'sections', 'timeline', 'cards', 'responsive';
+/* reset/base */
+*,
+*::before,
+*::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+font-family: var(--font-main);
+color: var(--clr-text);
+background: var(--clr-bg-soft);
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+}
+.container {
+width: 90%;
+max-width: var(--max-width);
+margin-inline: auto;
+}
