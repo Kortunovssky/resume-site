@@ -1,0 +1,18 @@
+:root {
+--clr-primary: #2563eb;
+--clr-secondary: #1e40af;
+--clr-accent: #3b82f6;
+--clr-text: #1f2937;
+--clr-text-light: #6b7280;
+--clr-bg: #ffffff;
+--clr-bg-soft: #f9fafb;
+--radius: 12px;
+--shadow: 0 4px 12px rgba(0,0,0,.08);
+--max-width: 1200px;
+--font-main: 'Inter', system-ui, sans-serif;
+}
+$breakpoints: (
+'tablet': 1024px,
+'mobile': 768px,
+'small': 480px
+);
